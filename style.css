@@ -1,3 +1,8 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .blur{
     animation:  blur 10s;
 }
@@ -16,13 +21,14 @@
     box-shadow: 2px 2px 9 px rgba(250, 235, 215, 0.614);
     animation: own-background 10s linear infinite;
 }
-.container{
+.card{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     transform: scale(1);
     margin-top: 60px;
+    padding-top: 40px;
 }
 @keyframes own-background{
     0%,100% {background-color: red;}
@@ -32,10 +38,6 @@
     80% {background-color:violet}
 }
 .btn{
-    margin-top:30px
-}
-@media only screen and(max-width:500px){
-    .container{
-        transform: scale(2);
-    }
+    margin-top:30px;
+    width:100%;
 }
